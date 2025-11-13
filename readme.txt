@@ -12,3 +12,7 @@ kubectl expose deployment my-nginx --type=NodePort --port=80
 kubectl get svc
 minikube service my-nginx --url
 
+---if error---
+
+minikube stop
+minikube delete
