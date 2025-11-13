@@ -1,6 +1,6 @@
 minikube start --driver=docker
 kubectl apply -f nginx-pod.yaml
-kubect get pods
+kubectl get pods
 kubectl port-forward pod/nginx-pod 8080:80
 kubectl delete pod nginx-pod
 
